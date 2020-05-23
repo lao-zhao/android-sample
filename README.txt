@@ -1,1 +1,1 @@
-My sample。
+This is my android sample。
