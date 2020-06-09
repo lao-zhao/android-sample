@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+
+android {
+    /** 为了能够支持该库中的包 */
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 100
+        versionName "1.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ext.enableCrashlytics = false // 禁用生成Crashlytics报告的插件
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    /*productFlavors {
+        dev {
+            // 为dev的productFlavors指定一个语言资源和屏幕密度
+            resConfigs "zh", "xxhdpi"
+        }
+        prod {
+
+        }
+    }*/
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //
+    implementation files('libs/jsch-0.1.53.jar')
+    // Apache http依赖
+    implementation files('libs/commons-net-3.3.jar')
+    // WebService请求依赖
+    implementation files('libs/ksoap2-android-assembly-3.6.4-jar-with-dependencies.jar')
+
+    // fastjson依赖[ali]
+    api 'com.alibaba:fastjson:1.2.68'
+
+    // rxjava依赖
+    /*api('io.reactivex.rxjava2:rxjava:2.2.19')*/
+    api('io.reactivex.rxjava2:rxandroid:2.1.1')
+
+    // retrofit依赖[squareup]
+    api('com.squareup.retrofit2:retrofit:2.9.0')
+    api('com.squareup.retrofit2:adapter-rxjava2:2.9.0')
+    api('com.squareup.retrofit2:converter-scalars:2.9.0')
+    /*implementation 'com.squareup.retrofit2:converter-gson:2.9.0'*/
+    /*implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'*/
+}

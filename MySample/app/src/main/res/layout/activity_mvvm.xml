@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- 数据源 -->
+    <data>
+        <variable
+            name="user"
+            type="com.sample.mvvm.model.UserBean" />
+
+        <variable
+            name="login"
+            type="com.sample.mvvm.model.LoginBean" />
+    </data>
+
+    <!-- 正常布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.userName}"/>
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.phoneNumber}"/>
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@{login.account}"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@{login.password}"/>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:img="@{user.imgUrl}"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:onClick="@{user::browseStudent}"
+            android:text="查看学生信息"/>
+    </LinearLayout>
+</layout>
