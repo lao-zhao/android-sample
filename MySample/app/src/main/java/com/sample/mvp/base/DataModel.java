@@ -1,6 +1,5 @@
 package com.sample.mvp.base;
 
-import com.sample.mvp.base.BaseModel;
 
 /**
  * 作者 Aaron Zhao

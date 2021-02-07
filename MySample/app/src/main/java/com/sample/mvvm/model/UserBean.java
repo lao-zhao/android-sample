@@ -2,14 +2,14 @@ package com.sample.mvvm.model;
 
 import android.content.Context;
 import android.content.Intent;
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
-import android.databinding.BindingAdapter;
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
+import androidx.databinding.BindingAdapter;
+
 import com.bumptech.glide.Glide;
-import com.name.libs.utils.DialogUtil;
 import com.sample.BR;
 import com.sample.mvvm.StudentActivity;
 
@@ -66,7 +66,7 @@ public class UserBean extends BaseObservable {
     }
 
     /* 该方法必须是静态方法 */
-    @BindingAdapter("bind:img")
+    @BindingAdapter("img")
     public static void setImgUrl(ImageView imageView, String imgUrl) {
         Glide.with(imageView.getContext()).load(imgUrl).into(imageView);
     }

@@ -8,12 +8,13 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CancellationSignal;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
-import com.name.libs.utils.DialogUtil;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.sample.support.db.bll.StudentService;
 import com.sample.support.db.model.Student;
+import com.winsth.android.libs.utils.DialogUtil;
 
 import java.util.ArrayList;
 import java.util.List;

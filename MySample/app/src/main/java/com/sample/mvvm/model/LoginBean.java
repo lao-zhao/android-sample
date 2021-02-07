@@ -1,6 +1,6 @@
 package com.sample.mvvm.model;
 
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableField;
 
 /**
  * 作者 Aaron Zhao

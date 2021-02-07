@@ -13,11 +13,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -25,11 +20,16 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.name.libs.adapters.CommonAdapter;
-import com.name.libs.adapters.ViewHolder;
-import com.name.libs.utils.DialogUtil;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.sample.R;
-import com.sample.view.activity.MainActivity;
+import com.winsth.android.libs.adapters.CommonAdapter;
+import com.winsth.android.libs.adapters.ViewHolder;
+import com.winsth.android.libs.utils.DialogUtil;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,7 +39,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.UUID;
 
 /**
  * 作者 Aaron Zhao

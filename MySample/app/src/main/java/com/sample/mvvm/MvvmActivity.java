@@ -1,9 +1,10 @@
 package com.sample.mvvm;
 
-import android.databinding.DataBindingUtil;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import com.sample.R;
 import com.sample.databinding.ActivityMvvmBinding;

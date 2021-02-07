@@ -1,8 +1,8 @@
 package com.sample.support.uitl;
 
-import com.name.libs.utils.RetrofitUtil;
 import com.sample.support.Inter.APIService;
 import com.sample.support.config.AppConfig;
+import com.winsth.android.libs.utils.RetrofitUtil;
 
 /**
  * 作者 Aaron Zhao

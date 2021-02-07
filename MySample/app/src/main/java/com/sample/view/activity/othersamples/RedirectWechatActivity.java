@@ -1,14 +1,15 @@
 package com.sample.view.activity.othersamples;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.name.libs.utils.DialogUtil;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.sample.R;
 import com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+import com.winsth.android.libs.utils.DialogUtil;
 
 /**
  * 开发者在微信开放平台帐号下申请移动应用并通过审核后，即可获得移动应用拉起小程序功能权限。

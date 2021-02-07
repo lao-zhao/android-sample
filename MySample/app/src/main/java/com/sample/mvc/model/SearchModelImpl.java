@@ -1,6 +1,7 @@
 package com.sample.mvc.model;
 
-import com.name.libs.utils.StringUtil;
+
+import com.winsth.android.libs.utils.StringUtil;
 
 /**
  * 作者 Aaron Zhao

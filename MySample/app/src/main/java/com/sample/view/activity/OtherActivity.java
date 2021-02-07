@@ -2,21 +2,17 @@ package com.sample.view.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.name.libs.adapters.CommonAdapter;
-import com.name.libs.adapters.ViewHolder;
-import com.name.libs.assists.ValueTextPair;
-import com.name.libs.utils.DialogUtil;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.sample.R;
 import com.sample.mvc.MVCActivity;
 import com.sample.mvp.MVPActivity;
 import com.sample.mvvm.MvvmActivity;
-import com.sample.mvvm.StudentActivity;
 import com.sample.view.activity.othersamples.EventBusActivity;
 import com.sample.view.activity.othersamples.GlideActivity;
 import com.sample.view.activity.othersamples.ReadDataByBluetoothActivity;
@@ -24,6 +20,9 @@ import com.sample.view.activity.othersamples.RedirectWechatActivity;
 import com.sample.view.activity.othersamples.RelatedQueryActivity;
 import com.sample.view.activity.othersamples.RxJava2SwitchThreadActivity;
 import com.sample.view.activity.othersamples.SetAutoPerfomActivity;
+import com.winsth.android.libs.adapters.CommonAdapter;
+import com.winsth.android.libs.adapters.ViewHolder;
+import com.winsth.android.libs.assists.ValueTextPair;
 
 import java.util.ArrayList;
 import java.util.List;

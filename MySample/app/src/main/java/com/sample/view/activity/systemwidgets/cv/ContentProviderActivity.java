@@ -4,15 +4,16 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.name.libs.adapters.CommonAdapter;
-import com.name.libs.adapters.ViewHolder;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.sample.R;
 import com.sample.support.config.DTFConfig;
+import com.winsth.android.libs.adapters.CommonAdapter;
+import com.winsth.android.libs.adapters.ViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;

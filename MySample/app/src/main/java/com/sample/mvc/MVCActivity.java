@@ -1,17 +1,18 @@
 package com.sample.mvc;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.name.libs.utils.DialogUtil;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.sample.R;
 import com.sample.mvc.model.ISearchModel;
 import com.sample.mvc.model.OnSearchListener;
 import com.sample.mvc.model.SearchModelImpl;
+import com.winsth.android.libs.utils.DialogUtil;
 
 public class MVCActivity extends AppCompatActivity implements View.OnClickListener, OnSearchListener {
     private EditText etName;

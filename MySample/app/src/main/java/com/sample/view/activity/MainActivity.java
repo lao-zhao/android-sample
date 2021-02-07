@@ -2,20 +2,22 @@ package com.sample.view.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.name.libs.adapters.CommonAdapter;
-import com.name.libs.adapters.ViewHolder;
-import com.name.libs.assists.ValueTextPair;
-import com.name.libs.utils.DialogUtil;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.sample.R;
+import com.winsth.android.libs.adapters.CommonAdapter;
+import com.winsth.android.libs.adapters.ViewHolder;
+import com.winsth.android.libs.assists.ValueTextPair;
+import com.winsth.android.libs.utils.DialogUtil;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private GridView gvMenu;

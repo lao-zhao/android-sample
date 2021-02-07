@@ -4,12 +4,12 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 
-import com.name.libs.utils.CommonUtil;
-import com.name.libs.utils.LogUtil;
-import com.name.libs.utils.singleton.SQLiteUtil;
 import com.sample.support.config.AppConfig;
 import com.sample.support.config.DTFConfig;
 import com.sample.support.db.model.Student;
+import com.winsth.android.libs.utils.CommonUtil;
+import com.winsth.android.libs.utils.LogUtil;
+import com.winsth.android.libs.utils.singleton.SQLiteUtil;
 
 import java.util.ArrayList;
 import java.util.List;

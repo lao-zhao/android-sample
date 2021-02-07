@@ -1,14 +1,15 @@
 package com.sample.mvvm.viewmodel;
 
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
-import android.databinding.BindingAdapter;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.android.databinding.library.baseAdapters.BR;
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
+import androidx.databinding.BindingAdapter;
+
 import com.bumptech.glide.Glide;
-import com.name.libs.utils.DialogUtil;
+import com.sample.BR;
+import com.winsth.android.libs.utils.DialogUtil;
 
 /**
  * 作者 Aaron Zhao
@@ -57,7 +58,7 @@ public class Student extends BaseObservable {
         notifyPropertyChanged(BR.headUrl);
     }
 
-    @BindingAdapter("bind:headimg")
+    @BindingAdapter("headimg")
     public static void setHeadUrl(ImageView imageView, String headUrl) {
         Glide.with(imageView.getContext()).load(headUrl).into(imageView);
     }

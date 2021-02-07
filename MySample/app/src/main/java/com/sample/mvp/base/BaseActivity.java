@@ -2,9 +2,10 @@ package com.sample.mvp.base;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-import com.name.libs.utils.DialogUtil;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.winsth.android.libs.utils.DialogUtil;
 
 /**
  * 作者 Aaron Zhao
